@@ -1,2 +1,5 @@
 # projekt_cyberbezpieczenstwo_nikto
-Przykład użycie skanera nikto na kontenerze z przykładową stroną internetową.
+Przykład użycia skanera nikto na kontenerze z przykładową stroną internetową.
+
+Hubert Mazur
+Marcin Michno
