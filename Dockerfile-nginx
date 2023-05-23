@@ -1,0 +1,9 @@
+# Pobranie oficjalnego obrazu Nginx
+FROM nginx
+
+# Skopiowanie plików HTML, CSS i JS do kontenera
+COPY html/ /usr/share/nginx/html/
+COPY config.txt /etc/nginx/nginx.conf
+
+# Eksponowanie portu 80
+EXPOSE 80

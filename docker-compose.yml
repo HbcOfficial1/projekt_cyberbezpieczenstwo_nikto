@@ -1,0 +1,15 @@
+version: '3'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    volumes:
+      - ./nginx:/usr/share/nginx/html
+  nikto:
+    build:
+      context: nikto/
+      dockerfile: Dockerfile
+    depends_on:
+      - nginx
+    command: nikto -h http://nginx:80/ -o /tmp/out.json
